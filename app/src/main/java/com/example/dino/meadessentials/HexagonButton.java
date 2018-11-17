@@ -1,10 +1,15 @@
 package com.example.dino.meadessentials;
 
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
 public class HexagonButton extends View {
+
+    private Paint paintHexagon = new Paint();
 
     public HexagonButton (Context context) {
         super(context);
@@ -23,7 +28,15 @@ public class HexagonButton extends View {
 
     private void init(AttributeSet attrs, int defStyle)
     {
-        //TODO
+        this.paintHexagon.setColor(Color.RED);
+
+    }
+
+    @Override
+    public void onDraw(Canvas canvas)
+    {
+        super.onDraw(canvas);
+        canvas.drawLine(0,0,getWidth(), getHeight(), this.paintHexagon);
     }
 
 }

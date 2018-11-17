@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MeadEssentials</string>
+    <string name="switch_to_test">Go To Test Screen</string>
 </resources>
