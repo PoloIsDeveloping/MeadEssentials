@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="139dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/custom_border_fruit_btn2"
         android:cropToPadding="@drawable/orange_fruit"
@@ -23,20 +23,23 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
+        android:background="@drawable/custon_botder_fruit_btn"
         android:text="Button"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="378dp"
-        android:background="@drawable/custon_botder_fruit_btn"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_editor_absoluteX="65dp" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="106dp"
+        android:layout_height="88dp"
         android:background="@drawable/custom_border_fruit_btn2"
         android:text="Button"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="378dp" />
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="375dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        tools:layout_editor_absoluteX="218dp" />
 </android.support.constraint.ConstraintLayout>
+
