@@ -17,13 +17,13 @@ public class MainMenu extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        final Button btnTerstInstance = findViewById(R.id.btnTest);
+        final Button btnTestInstance = findViewById(R.id.btnTest);
 
-        btnTerstInstance.setOnClickListener(new View.OnClickListener()
+        btnTestInstance.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                startNewActivity(TestScreen.class);            }
+                startNewActivity(MeadRecipes.class);            }
         });
     }
 

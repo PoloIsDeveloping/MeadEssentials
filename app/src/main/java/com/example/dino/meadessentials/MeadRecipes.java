@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toolbar;
 
@@ -22,6 +23,10 @@ public class MeadRecipes extends AppCompatActivity {
         toolbar.setTitle(getResources().getString(R.string.app_name));
         listview = (ListView) findViewById(R.id.listview);
 
+        ArrayAdapter<String> mAdapter = new ArrayAdapter<>(MeadRecipes.this,
+                android.R.layout.simple_list_item_1,
+                getResources().getStringArray(R.array.MeadRecipes));
+
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -30,5 +35,6 @@ public class MeadRecipes extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        listview.setAdapter(mAdapter);
      }
 }
