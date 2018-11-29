@@ -17,5 +17,7 @@
         </shape>
     </item>
 
+    <item android:drawable="@drawable/orange_fruit" />
+    <item android:drawable="@drawable/custom_border_fruit_btn2"/>   <!--layer list to use multiple drawables-->
 </layer-list>
 
