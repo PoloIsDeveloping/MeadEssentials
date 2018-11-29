@@ -2,7 +2,7 @@
     <string name="app_name">MeadEssentials</string>
     <string name="switch_to_test">Go To Test Screen</string>
 
-    <string-array name="Countries">
+    <string-array name="MeadRecipes">
         <item> Orange Mead </item>
         <item> Cherry Mead </item>
         <item> Blueberry Mead </item>

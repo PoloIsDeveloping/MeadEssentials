@@ -1,5 +1,6 @@
 package com.example.dino.meadessentials;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,12 +19,15 @@ public class MeadRecipes extends AppCompatActivity {
         setContentView(R.layout.activity_mead_recipes);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getResources().getString(R.string.app_name));
         listview = (ListView) findViewById(R.id.listview);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Intent intent = new Intent(MeadRecipes.this, SeccondActivity.class);
+                intent.putExtra("MeadRecipes", listview.getItemAtPosition(i).toString());
+                startActivity(intent);
             }
         });
      }

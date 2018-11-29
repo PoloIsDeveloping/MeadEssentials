@@ -27,7 +27,8 @@
 
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".MeadRecipes"></activity>
+        <activity android:name=".MeadRecipes" />
+        <activity android:name=".SeccondActivity"></activity>
     </application>
 
 </manifest>
