@@ -11,7 +11,7 @@ import android.widget.ListView;
 public class MeadRecipes extends AppCompatActivity {
 
     android.support.v7.widget.Toolbar toolbar;
-    ListView listview;
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,22 +20,22 @@ public class MeadRecipes extends AppCompatActivity {
         setContentView(R.layout.activity_mead_recipes);
         this.toolbar = findViewById(R.id.customToolbar);
         this.toolbar.setTitle(getResources().getString(R.string.app_name));
-        this.listview = findViewById(R.id.customListView);
+        this.listView = findViewById(R.id.customListView);
 
         ArrayAdapter<String> mAdapter = new ArrayAdapter<>(MeadRecipes.this,
                 android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.MeadRecipes));
 
-        this.listview.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        this.listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
             {
                 Intent intent = new Intent(MeadRecipes.this, SeccondActivity.class);
-                intent.putExtra("MeadRecipes", listview.getItemAtPosition(i).toString());
+                intent.putExtra("MeadRecipes", listView.getItemAtPosition(i).toString());
                 startActivity(intent);
             }
         });
-        this.listview.setAdapter(mAdapter);
+        this.listView.setAdapter(mAdapter);
      }
 }

@@ -20,7 +20,7 @@ public class SeccondActivity extends AppCompatActivity {
        this.meadRecipe = findViewById(R.id.imageView);
 
         Bundle bundle = getIntent().getExtras();
-        if(bundle ! = null){
+        if(bundle != null){
             mToolbar.setTitle(bundle.getString("MeadRecipes"));
         }
     }
