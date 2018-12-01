@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke
+        android:width="5dp"
+        android:color="#1ca30a"  />   <!--For the external border-->
+    <!--<solid android:color="#c21515"-->  <!--For the internal background-->
+    <!--<corners android:radius="20dp" />-->  <!--set corners-->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="50dp" /> <!--If you want a padding betwen border and the internal elements-->
+
+</shape>
