@@ -17,7 +17,7 @@ public class MainMenu extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        final Button btnTestInstance = findViewById(R.id.btnTest);
+        final Button btnTestInstance = findViewById(R.id.btn_test);
 
         btnTestInstance.setOnClickListener(new View.OnClickListener()
         {
