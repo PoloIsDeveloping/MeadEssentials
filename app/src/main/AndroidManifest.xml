@@ -28,7 +28,8 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".MeadRecipes" />
-        <activity android:name=".SeccondActivity"></activity>
+        <activity android:name=".SeccondActivity" />
+        <activity android:name=".Deletethis"></activity>
     </application>
 
 </manifest>
