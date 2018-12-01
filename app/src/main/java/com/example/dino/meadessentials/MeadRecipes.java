@@ -19,15 +19,15 @@ public class MeadRecipes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mead_recipes);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(getResources().getString(R.string.app_name));
-        listview = (ListView) findViewById(R.id.listview);
+        this.toolbar = (Toolbar) findViewById(R.id.toolbar);
+        this.toolbar.setTitle(getResources().getString(R.string.app_name));
+        this.listview = (ListView) findViewById(R.id.listview);
 
         ArrayAdapter<String> mAdapter = new ArrayAdapter<>(MeadRecipes.this,
                 android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.MeadRecipes));
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        this.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MeadRecipes.this, SeccondActivity.class);
@@ -35,6 +35,6 @@ public class MeadRecipes extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        listview.setAdapter(mAdapter);
+        this.listview.setAdapter(mAdapter);
      }
 }
