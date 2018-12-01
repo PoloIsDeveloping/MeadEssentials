@@ -7,7 +7,7 @@ import android.widget.Toolbar;
 
 public class SeccondActivity extends AppCompatActivity {
 
-   Toolbar mToolbar;
+    android.support.v7.widget.Toolbar mToolbar;
    ImageView meadRecipe;   // i will be using a mead image for each recipe in list view*/
 
 
