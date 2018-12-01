@@ -29,7 +29,8 @@ public class MeadRecipes extends AppCompatActivity {
         this.listview.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+            {
                 Intent intent = new Intent(MeadRecipes.this, SeccondActivity.class);
                 intent.putExtra("MeadRecipes", listview.getItemAtPosition(i).toString());
                 startActivity(intent);
